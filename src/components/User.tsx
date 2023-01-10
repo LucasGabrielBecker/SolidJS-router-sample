@@ -3,18 +3,17 @@ import { A } from '@solidjs/router';
 
 export function User({ user }: { user: any }) {
   return (
-    <A href={`/users/${user.id}`}>
-      <Box
-        maxW="600px"
-        mx="auto"
+    <Box maxW="600px" mx="auto">
+      <A
+        href={`/users/${user.id}`}
         class="flex items-center justify-between bg-slate-400 my-4 rounded-md px-6"
         style={{
           'background-image': `linear-gradient(
-            90deg,
-            hsl(216deg 20% 31%) 0%,
-            hsl(216deg 18% 39%) 51%,
-            hsl(217deg 17% 48%) 100%
-          )`,
+              90deg,
+              hsl(216deg 20% 31%) 0%,
+              hsl(216deg 18% 39%) 51%,
+              hsl(217deg 17% 48%) 100%
+            )`,
         }}
       >
         {user.firstName}
@@ -25,7 +24,7 @@ export function User({ user }: { user: any }) {
             width={80}
           />
         </div>
-      </Box>
-    </A>
+      </A>
+    </Box>
   );
 }

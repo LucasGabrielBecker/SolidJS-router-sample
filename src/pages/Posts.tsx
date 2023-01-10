@@ -1,11 +1,9 @@
-import { Box, Flex, Image, Tag, Heading, HStack } from '@hope-ui/solid';
 import { useRouteData } from '@solidjs/router';
 import { For, Show } from 'solid-js';
 import { getPostsByUserId } from '../resources/getPostsFromUser';
-import { Icon, createIcon } from '@hope-ui/solid';
 import { Post, PostReactions, PostTags, PostTitle } from '../components/Post';
 
-export function UsersPosts() {
+function Posts() {
   const posts = useRouteData<ReturnType<typeof getPostsByUserId>>();
 
   return (
@@ -23,3 +21,5 @@ export function UsersPosts() {
     </Show>
   );
 }
+
+export default Posts;

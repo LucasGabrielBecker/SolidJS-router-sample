@@ -1,9 +1,9 @@
 import { Box, Flex, Image, Icon, Heading, Tag, HStack } from '@hope-ui/solid';
-import { Component, For } from 'solid-js';
+import { For } from 'solid-js';
 
 interface PostProps {
   post: any;
-  children: Component | Component[];
+  children: Element | Element[];
 }
 export function Post({ post, ...props }: PostProps) {
   return (

@@ -1,8 +1,8 @@
 import { Skeleton, VStack } from '@hope-ui/solid';
 import { useRouteData } from '@solidjs/router';
-import { Component, lazy, Show, For } from 'solid-js';
-import { User } from './components/User';
-const App: Component = () => {
+import { Suspense, Show, For } from 'solid-js';
+import { User } from '../components/User';
+function Home() {
   const users: any = useRouteData();
   return (
     <div class="p-6">
@@ -31,6 +31,6 @@ const App: Component = () => {
       </Show>
     </div>
   );
-};
+}
 
-export default App;
+export default Home;
