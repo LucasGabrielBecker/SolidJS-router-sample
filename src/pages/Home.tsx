@@ -5,7 +5,7 @@ import { User } from '../components/User';
 function Home() {
   const users: any = useRouteData();
   return (
-    <div class="p-6">
+    <div class="p-6 bg-zinc-900 text-white min-h-max pt-12">
       <Show when={!users()}>
         <VStack alignItems="stretch" spacing="$2" maxW="600px" mx="auto">
           <Skeleton height="60px" />

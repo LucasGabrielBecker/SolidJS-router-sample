@@ -13,7 +13,8 @@ export function Post({ post, ...props }: PostProps) {
       maxW={{ '@sm': '90%', '@md': '600px' }}
       bg="#2c2f31"
       rounded="$lg"
-      mt="$4"
+      mb="$2"
+      color="#fff"
     >
       <Flex flexDirection={{ '@sm': 'column', '@lg': 'row' }}>
         <Image

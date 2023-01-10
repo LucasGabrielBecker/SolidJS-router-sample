@@ -17,12 +17,13 @@
 html,
 body {
   height: 100%;
-  background-color: #181a1b;
+
   color: azure;
 }
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background-color: #181a1b;
 }
 img,
 picture,
